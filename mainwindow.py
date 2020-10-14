@@ -1,5 +1,9 @@
-from PySide2.QtWidgets import QtMainWindow
+from PySide2.QtWidgets import QMainWindow
+from ui_mainwindow import Ui_MainWindow
 
-class = MainWindow(QMainwindow):
+class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
+        ui = Ui_MainWindow()
+        ui.setupUi(self)
+        
